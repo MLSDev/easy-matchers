@@ -1,5 +1,3 @@
-require_relative 'validations'
-
 module RSpec
   module Rails
     module ActiveModel
