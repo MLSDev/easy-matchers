@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path('../lib', __FILE__)
 
 require 'easy/version'
 
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_dependency 'rake'
-  s.add_dependency 'rails', '~> 4.2'
+  s.add_dependency 'activemodel', '~> 4.2'
   s.add_dependency 'rspec', '~> 3.3'
 end

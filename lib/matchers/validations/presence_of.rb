@@ -1,29 +1,38 @@
 module Easy
   module Matchers
     module Validations
-      def validate_presence_of(field)
-        ValidatePresenceOfMatcher.new(field)
+      def validate_presence_of(*attributes)
+        ValidatePresenceOfMatcher.new(attributes)
       end
 
-      class ValidatePresenceOfMatcher < HaveValidationMatcher
-        include WithMessage
-
-        def initialize(name)
-          super(name, :presence)
+      class ValidatePresenceOfMatcher < BaseValidationMatcher
+        def initialize(attributes)
+          super(attributes, :presence)
         end
 
-        def matches?(actual)
-          @result = super(actual)
+        def matches?(subject)
+          super(subject)
 
-          return false unless @result
+          matched_validator = class_name.validators.detect do |validator|
+            validator.kind == type &&
+            validator.attributes.sort == attributes.sort &&
+            validator.options.sort == options.sort
+          end
 
-          check_expected_message if @expected_message
+          true if matched_validator
+        end
 
-          @result
+        def description
+          "require #{ attributes.join(', ') } to be set"
         end
 
         def with_message(message)
-          @expected_message = message
+          options[:message] = message
+          self
+        end
+
+        def on(context)
+          options[:on] = context
           self
         end
       end
