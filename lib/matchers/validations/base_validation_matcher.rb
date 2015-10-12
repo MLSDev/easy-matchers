@@ -24,6 +24,10 @@ module Easy
       def class_name
         subject.class
       end
+
+      def description
+        raise NotImplementedError, 'Subclasses must implement a description method.'
+      end
     end
   end
 end

@@ -92,9 +92,30 @@ module Easy
           self
         end
 
+        def if
+          raise NotImplementedError
+        end
+
+        def unless
+          raise NotImplementedError
+        end
+
         def on(context)
           options[:on] = context
           self
+        end
+
+        def allow_nil
+          options[:allow_nil] = true
+          self
+        end
+
+        def allow_blank
+          raise NotImplementedError
+        end
+
+        def strict
+          raise NotImplementedError
         end
 
         # TODO: add support
