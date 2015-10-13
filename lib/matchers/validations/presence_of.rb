@@ -8,9 +8,7 @@ module Easy
       #     class Post
       #       include ActiveModel::Validations
       #
-      #       attr_accessor :title
-      #
-      #       attr_accessor :description
+      #       attr_accessor :title, :description
       #
       #       validates_presence_of :title
       #
@@ -113,7 +111,8 @@ module Easy
         end
 
         def allow_blank
-          raise NotImplementedError
+          options[:allow_blank] = true
+          self
         end
 
         def strict

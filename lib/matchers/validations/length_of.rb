@@ -48,7 +48,8 @@ module Easy
         end
 
         def allow_blank
-          raise NotImplementedError
+          options[:allow_blank] = true
+          self
         end
 
         def strict
