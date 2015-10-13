@@ -28,6 +28,30 @@ module Easy
       def description
         raise NotImplementedError, 'Subclasses must implement a description method.'
       end
+
+      def if
+        raise NotImplementedError, 'Subclasses must implement a if method.'
+      end
+
+      def unless
+        raise NotImplementedError, 'Subclasses must implement a unless method.'
+      end
+
+      def on(context)
+        raise NotImplementedError, 'Subclasses must implement a on method.'
+      end
+
+      def allow_nil
+        raise NotImplementedError, 'Subclasses must implement a allow_nil method.'
+      end
+
+      def allow_blank
+        raise NotImplementedError, 'Subclasses must implement a allow_blank method.'
+      end
+
+      def strict
+        raise NotImplementedError, 'Subclasses must implement a strict method.'
+      end
     end
   end
 end
