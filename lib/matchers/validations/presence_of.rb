@@ -105,13 +105,13 @@ module Easy
           self
         end
 
-        def allow_nil
-          options[:allow_nil] = true
+        def allow_nil(value = true)
+          options[:allow_nil] = value
           self
         end
 
-        def allow_blank
-          options[:allow_blank] = true
+        def allow_blank(value = true)
+          options[:allow_blank] = value
           self
         end
 
