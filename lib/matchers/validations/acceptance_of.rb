@@ -17,8 +17,8 @@ module Easy
 
           matched_validator = class_name.validators.detect do |validator|
             validator.kind == type &&
-            validator.attributes.sort == attributes.sort &&
-            validator.options.sort == options.sort
+              validator.attributes.sort == attributes.sort &&
+              validator.options.sort == options.sort
           end
 
           true if matched_validator
