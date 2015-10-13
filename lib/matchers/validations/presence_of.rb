@@ -92,7 +92,9 @@ module Easy
           self
         end
 
-        def if
+        def if(&block)
+          # block.call == options[:if].call
+
           raise NotImplementedError
         end
 
@@ -117,11 +119,6 @@ module Easy
         def strict
           raise NotImplementedError
         end
-
-        # TODO: add support
-        # There is also a list of default options supported by every validator:
-        # +:if+, +:unless+, +:on+, +:allow_nil+, +:allow_blank+, and +:strict+.
-        # See <tt>ActiveModel::Validation#validates</tt> for more information
       end
     end
   end
