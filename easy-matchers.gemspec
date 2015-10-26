@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Igor Zubkov']
   s.email       = %q{igor.zubkov@gmail.com}
-  s.homepage    = %q{http://github.com/biow0lf/easy-matchers}
+  s.homepage    = %q{https://github.com/MLSDev/easy-matchers}
   s.summary     = %q{Extra RSpec matchers for Rails}
   s.description = %q{Extra RSpec matches for Rails (ActiveModel::Validators, ActiveModel::Model)}
 
