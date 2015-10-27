@@ -1,0 +1,12 @@
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/DotPosition:
+  Enabled: true
+  EnforcedStyle: leading
+
+Style/SpaceInsideStringInterpolation:
+  Enabled: false
