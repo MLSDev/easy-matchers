@@ -58,8 +58,9 @@ module Easy
           self
         end
 
-        def strict
-          raise NotImplementedError
+        def strict(value)
+          options[:strict] = value
+          self
         end
 
         private

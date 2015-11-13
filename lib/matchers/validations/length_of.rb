@@ -52,8 +52,9 @@ module Easy
           self
         end
 
-        def strict
-          raise NotImplementedError
+        def strict(value)
+          options[:strict] = value
+          self
         end
 
         def is_at_most(value)
