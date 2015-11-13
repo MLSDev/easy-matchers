@@ -31,14 +31,14 @@ module Easy
           self
         end
 
-        def if(&block)
-          # block.call == options[:if].call
-
-          raise NotImplementedError
+        def if(symbol_name)
+          options[:if] = symbol_name
+          self
         end
 
-        def unless
-          raise NotImplementedError
+        def unless(symbol_name)
+          options[:unless] = symbol_name
+          self
         end
 
         def on(context)
