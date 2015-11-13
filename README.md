@@ -15,6 +15,21 @@ Easy matchers provides RSpec matchers for common Rails functionality.
 * validate_numericality_of
 * validate_presence_of
 
+## Install and configure
+
+`gem install easy-matchers`
+
+or via bundler:
+
+`gem 'easy-matchers'`
+
+spec/support/easy-matchers.rb:
+```
+RSpec.configure do |config|
+  config.include Easy::Matchers::Validations, type: :model
+end
+```
+
 ## License
 
 This work is licensed under a MIT License.
