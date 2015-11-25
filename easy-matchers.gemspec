@@ -3,22 +3,25 @@ $:.push File.expand_path('../lib', __FILE__)
 
 require 'easy/version'
 
-Gem::Specification.new do |s|
-  s.name        = 'easy-matchers'
-  s.version     = Easy::Matchers::VERSION
-  s.platform    = Gem::Platform::RUBY
-  s.authors     = ['Igor Zubkov']
-  s.email       = %q{igor.zubkov@gmail.com}
-  s.homepage    = %q{https://github.com/MLSDev/easy-matchers}
-  s.summary     = %q{Extra RSpec matchers for Rails}
-  s.description = %q{Extra RSpec matches for Rails (ActiveModel::Validators, ActiveModel::Model)}
+Gem::Specification.new do |spec|
+  spec.name        = 'easy-matchers'
+  spec.version     = Easy::Matchers::VERSION
+  spec.authors     = ['Igor Zubkov']
+  spec.email       = ['igor.zubkov@gmail.com']
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ['lib']
+  spec.summary     = 'Extra RSpec matchers for Rails'
+  spec.description = 'Extra RSpec matches for Rails (ActiveModel::Validators, ActiveModel::Model)'
+  spec.homepage    = 'https://github.com/MLSDev/easy-matchers'
+  spec.license     = 'MIT'
 
-  s.add_dependency 'rake'
-  s.add_dependency 'activemodel', '~> 4.2'
-  s.add_dependency 'rspec', '~> 3.3'
+  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features|bin)/}) }
+  spec.require_paths = ['lib']
+
+  spec.required_ruby_version = '>= 2.0'
+
+  spec.add_development_dependency 'bundler', '~> 1.10'
+  spec.add_development_dependency 'rake', '~> 10.0'
+
+  spec.add_runtime_dependency 'rspec', '~> 3.4'
+  spec.add_runtime_dependency 'activemodel', '~> 4.2'
 end
