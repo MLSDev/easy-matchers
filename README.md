@@ -45,3 +45,7 @@ Find out more [here][mlsdev] and don't hesitate to [contact us][contact]!
 
 [mlsdev]: http://mlsdev.com
 [contact]: http://mlsdev.com/contact_us
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/MLSDev/easy-matchers/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
