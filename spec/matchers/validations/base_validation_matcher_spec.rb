@@ -50,8 +50,8 @@ describe Easy::Matchers::BaseValidationMatcher do
   end
 
 
-  describe '#if' do
-    specify { expect { subject.if(:hello) }
+  describe '#with_if' do
+    specify { expect { subject.with_if(:hello) }
       .to raise_error(NotImplementedError, 'Subclasses must implement a if method.') }
   end
 

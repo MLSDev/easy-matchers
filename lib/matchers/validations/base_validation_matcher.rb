@@ -29,7 +29,7 @@ module Easy
         raise NotImplementedError, 'Subclasses must implement a description method.'
       end
 
-      def if(symbol_name)
+      def with_if(symbol_name)
         raise NotImplementedError, 'Subclasses must implement a if method.'
       end
 
