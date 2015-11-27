@@ -7,28 +7,22 @@ describe Easy::Matchers::BaseValidationMatcher do
 
   subject { described_class.new(attributes, type) }
 
-  describe '#initialize'
+  describe '#initialize' do
+    specify { expect(subject.attributes).to eq(attributes) }
+
+    specify { expect(subject.failure_message).to eq(nil) }
+
+    specify { expect(subject.failure_message_when_negated).to eq(nil) }
+
+    specify { expect(subject.subject).to eq(nil) }
+
+    specify { expect(subject.type).to eq(:validator) }
+
+    specify { expect(subject.options).to eq({}) }
+  end
 
   describe '#matches?'
 
-  # module Easy
-  #   module Matchers
-  #     class BaseValidationMatcher
-  #       attr_reader :attributes,
-  #                   :failure_message,
-  #                   :failure_message_when_negated,
-  #                   :subject,
-  #                   :type,
-  #                   :options
-  #
-  #       def initialize(attributes, type)
-  #         @attributes = attributes
-  #         @failure_message = nil
-  #         @failure_message_when_negated = nil
-  #         @type = type
-  #         @options = {}
-  #       end
-  #
   #       def matches?(subject)
   #         @subject = subject
   #         false
