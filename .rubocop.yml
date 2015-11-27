@@ -10,3 +10,9 @@ Style/DotPosition:
 
 Style/SpaceInsideStringInterpolation:
   Enabled: false
+
+Style/PredicateName:
+  Enabled: false
+
+Style/SignalException:
+  Enabled: false
