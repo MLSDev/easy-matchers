@@ -29,11 +29,11 @@ module Easy
         raise NotImplementedError, 'Subclasses must implement a description method.'
       end
 
-      def if
+      def if(symbol_name)
         raise NotImplementedError, 'Subclasses must implement a if method.'
       end
 
-      def unless
+      def unless(symbol_name)
         raise NotImplementedError, 'Subclasses must implement a unless method.'
       end
 
@@ -41,11 +41,11 @@ module Easy
         raise NotImplementedError, 'Subclasses must implement a on method.'
       end
 
-      def allow_nil
+      def allow_nil(value = true)
         raise NotImplementedError, 'Subclasses must implement a allow_nil method.'
       end
 
-      def allow_blank
+      def allow_blank(value = true)
         raise NotImplementedError, 'Subclasses must implement a allow_blank method.'
       end
 
