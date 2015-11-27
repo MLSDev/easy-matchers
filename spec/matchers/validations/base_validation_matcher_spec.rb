@@ -21,12 +21,13 @@ describe Easy::Matchers::BaseValidationMatcher do
     specify { expect(subject.options).to eq({}) }
   end
 
-  describe '#matches?'
+  describe '#matches?' do
+    let(:new_subject) { double }
 
-  #       def matches?(subject)
-  #         @subject = subject
-  #         false
-  #       end
+    specify { expect { subject.matches?(new_subject) }.to change { subject.subject }.from(nil).to(new_subject) }
+
+    specify { expect(subject.matches?(new_subject)).to eq(false) }
+  end
 
   describe '#class_name' do
     before do
