@@ -13,7 +13,7 @@ Easy matchers provides RSpec matchers for common Rails functionality.
 
 1. We want write specs all functionality in our Rails application. Yes, with validations, associations and all other things.
 
-2. We want check presence of validations and associations, but don't test implementations. This is main difference with shoulda-matchers. Shoulda-matchers instead checking the presence of validations or associations, check implementation. Why are we should test rails?
+2. We want check presence of validations and associations, but don't test implementations. This is main difference with shoulda-matchers. Shoulda-matchers instead checking the presence of validations or associations, check implementation. Why we should test rails?
 
 ## ActiveModel::Validations matchers
 
