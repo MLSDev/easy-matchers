@@ -3,6 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/easy-matchers.svg)](https://badge.fury.io/rb/easy-matchers)
 [![Code Climate](https://codeclimate.com/github/MLSDev/easy-matchers/badges/gpa.svg)](https://codeclimate.com/github/MLSDev/easy-matchers)
 [![Test Coverage](https://codeclimate.com/github/MLSDev/easy-matchers/badges/coverage.svg)](https://codeclimate.com/github/MLSDev/easy-matchers/coverage)
+[![Build Status](https://travis-ci.org/MLSDev/easy-matchers.svg)](https://travis-ci.org/MLSDev/easy-matchers)
 
 Easy matchers provides RSpec matchers for common Rails functionality.
 
