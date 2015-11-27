@@ -76,7 +76,7 @@ describe Easy::Matchers::BaseValidationMatcher do
   end
 
   describe '#strict' do
-    specify { expect { subject.strict }
+    specify { expect { subject.strict(true) }
       .to raise_error(NotImplementedError, 'Subclasses must implement a strict method.') }
   end
 end

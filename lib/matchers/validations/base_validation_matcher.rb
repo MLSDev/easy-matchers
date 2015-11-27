@@ -49,7 +49,7 @@ module Easy
         raise NotImplementedError, 'Subclasses must implement a allow_blank method.'
       end
 
-      def strict
+      def strict(value)
         raise NotImplementedError, 'Subclasses must implement a strict method.'
       end
     end
