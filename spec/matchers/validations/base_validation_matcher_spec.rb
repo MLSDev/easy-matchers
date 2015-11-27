@@ -55,8 +55,8 @@ describe Easy::Matchers::BaseValidationMatcher do
       .to raise_error(NotImplementedError, 'Subclasses must implement a if method.') }
   end
 
-  describe '#unless' do
-    specify { expect { subject.unless(:hello) }
+  describe '#with_unless' do
+    specify { expect { subject.with_unless(:hello) }
       .to raise_error(NotImplementedError, 'Subclasses must implement a unless method.') }
   end
 

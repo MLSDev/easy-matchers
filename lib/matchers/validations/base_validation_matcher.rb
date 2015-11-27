@@ -33,7 +33,7 @@ module Easy
         raise NotImplementedError, 'Subclasses must implement a if method.'
       end
 
-      def unless(symbol_name)
+      def with_unless(symbol_name)
         raise NotImplementedError, 'Subclasses must implement a unless method.'
       end
 
