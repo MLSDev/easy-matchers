@@ -16,7 +16,7 @@ describe Easy::Matchers::BaseValidationMatcher do
 
     specify { expect(subject.subject).to eq(nil) }
 
-    specify { expect(subject.type).to eq(:validator) }
+    specify { expect(subject.type).to eq(type) }
 
     specify { expect(subject.options).to eq({}) }
   end
