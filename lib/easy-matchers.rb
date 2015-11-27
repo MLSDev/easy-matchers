@@ -1,3 +1,4 @@
+require 'matchers/version'
 require 'matchers/validations/base_validation_matcher'
 require 'matchers/validations/absence_of'
 require 'matchers/validations/acceptance_of'
