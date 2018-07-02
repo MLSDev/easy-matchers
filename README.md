@@ -2,6 +2,8 @@
 
 This repo is deprecated and no longer supported.
 
+---
+
 # Easy Matchers
 
 [![Gem Version](https://badge.fury.io/rb/easy-matchers.svg)](https://badge.fury.io/rb/easy-matchers)
